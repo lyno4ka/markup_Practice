@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    color: #6b6b6b;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;   
+    width: 100%;
+    background: #363636;
+    z-index: 999;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.content {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+}
+
+header .content .heading-block .heading-link {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #dadada;
+    text-decoration: none;
+}
+
+header .content .menu-block ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+header .content .menu-block ul li {
+    margin-right: 30px;
+}
+
+header .content .menu-block ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color .3s;
+    text-transform: uppercase;
+}
+
+header .content .menu-block ul li:last-child {
+    margin-right: 0;
+}
+
+header .content .menu-block ul li a:hover {
+    color:#DA4453;
+}
+
+.wrapper {
+    position: relative;
+    top: 75px;
+}
+
+.slider {
+    background: url(../img/slider.jpg);
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    width: 100%;
+    height: 425px;
+    margin: 0 0 50px 0;
+}
+
+.slider-wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto 70px auto;
+}
+
+.slider .slider-block {
+    max-width: 600px;
+}
+
+.slider .slider-block h1 {
+    font-family: 'Roboto Slab';
+    background: rgb(218, 68, 83, 0.7);
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px 20px;
+    margin: 0;
+    width: 35%;
+}
+
+.slider .slider-block p {
+    background: rgb(59, 59, 59, 0.8);
+    color: #dddddd;
+    padding: 12px 20px;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+}
+
+.article-container {
+    width: 66.67%;
+    padding-right: 15px;
+    max-width: 750px;
+}
+
+.article-container article {
+    margin-bottom: 50px;
+}
+
+.article-container article .preview-image {
+    transition: opacity 0.5s linear;
+}
+
+.article-container article .preview-image:hover {
+    opacity: 0.8;
+}
+
+.article-container article .teaser {
+    background: #fff;
+    padding: 45px 50px;
+    border: 1px solid #dadada;
+}
+
+.article-container article .teaser h1 {
+    margin: 0 0 30px 0;
+}
+
+.article-container article .teaser h1 a {
+    font-family: 'Roboto Slab';
+    font-size: 2.8rem;
+    color: #444444;
+    transition: color .3s;
+}
+
+.article-container article .teaser h1 a:hover {
+    color: #DA4453;
+}
+
+.article-container article .teaser p {
+    margin: 0 0 10px 0;
+}
+
+.article-container article .teaser .meta-info {
+    margin-bottom: 30px;
+}
+
+.article-container article .teaser .meta-info .item {
+    margin-right: 10px;
+}
+
+.article-container article .teaser .meta-info .item:last-child {
+    margin-right: 0;
+}
+
+.article-container article .teaser .meta-info a {
+    color: #6b6b6b;
+    font-size: 1.3rem;
+}
+
+.article-container article .readmore {
+    background: #DA4453;
+    display: inline-block;
+    padding: 11px 13px;
+    color: #fff;
+    border-radius: 4px;
+    transition: background .3s;
+    border: 1px solid transparent;
+}
+
+.article-container article .readmore:hover {
+    background: #000000;
+    border-color: #000000;
+}
+
+.main-content aside {
+    width: 33.3%;
+    max-width: 390px;
+    height: fit-content;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #dadada;
+    margin: 0 15px 0 15px;
+    border-radius: 3px;
+}
+
+.main-content aside h2 {
+    font-family: 'Roboto Slab';
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #636467;
+    margin: 0 0 25px 0;
+    text-transform: uppercase;
+}
+
+.main-content aside .social {
+    margin-bottom: 50px;
+}
+
+.main-content aside .social .social-icons a {
+    transition: color 0.05s linear;
+}
+
+a .twitter-icon,
+a .facebook-icon,
+a .youtube-icon,
+a .google-icon,
+a .vk-icon {
+    font-size: 4rem;
+    color: rgb(122, 122, 122);
+    margin: 0 5px 5px 0;
+    border-radius: 3px;
+}
+
+a:hover .twitter-icon {
+    color: #55acee;
+}
+
+a:hover .facebook-icon {
+    color: #4265b9;
+}
+
+a:hover .youtube-icon {
+    color: #df3333;
+}
+
+a:hover .google-icon {
+    color: #d62408;
+}
+
+a:hover .vk-icon {
+    color: #5b8bb4;
+}
+
+.main-content aside .comments {
+    margin-bottom: 50px;
+}
+
+.main-content aside .comments .comment-row {
+    color: #c1c0c0;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.main-content aside .comments .comment-row .user-name {
+    font-weight: bold;
+}
+
+.main-content aside .tags .tags-block a {
+    
+    margin-bottom: 4px; 
+    border-radius: 3px;
+    background: #dadada;
+    font-size: 1.2rem;
+}
+
+.main-content aside .tags .tags-block a:hover {
+    background: #DA4453;
+}
+
+.main-content aside .tags .tags-block a span {
+    text-decoration: none;
+    padding: 6px 7px;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    padding: 10px 0;
+    background: #1f1f1f;
+    position: relative;
+    bottom: -8px;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+footer .content .menu-block ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+}
+
+footer .content .menu-block ul li a {
+    color: #dadada;
+    font-size: 1.2rem;
+    transition: color .3s linear;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+footer .content .menu-block ul li a:hover {
+    color:#fff;
+}
+
+footer .content .footer-block span {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+footer .content .footer-block span span {
+    color: #dadada;
+}
+
+@media screen and (max-width: 768px) {
+    header .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .article-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-content aside {
+        width: 90%;
+        max-width: 740px;
+        margin: 0 0 50px 0;
+    }
+
+    footer .content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
